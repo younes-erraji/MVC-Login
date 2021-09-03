@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<form class="login-form" method="post" action="Account/Verify">
+        <h1>Login</h1>
+        <div class="username">
+            <div><label id='label-user'>Username</label></div>
+            <input type="text" id="user" name="Username_" placeholder="Enter username" data-place='Enter username' required autofocus />
+        </div>
+        <div class="password">
+            <div><label id='label-pass'>Password</label></div>
+            <input type="password" id="pass" name="Password_" placeholder="Enter password" data-place='Enter password' required />
+        </div>
+        <input type="submit" class="log" id="login" value="Login" />
+        <span class="forgot"><a href="#">Forget password?</a></span>
+        <div class="bottom-text">
+            Don't have account? &nbsp; <a href="sign-up.html" style="text-decoration: underline;">Sign up</a>
+        </div>
+    </form>
+<div class="foot">Copyright 2020 &copy; &nbsp; WallPapers </div>
+<script src="~/javascript/custom.js"></script>
